@@ -1,0 +1,32 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
+    "files.autoSaveWhenNoErrors": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "terminal.integrated.confirmOnExit": false,
+    "terminal.integrated.confirmOnKill": false,
+    "workbench.editor.confirmDelete": false,
+    "workbench.editor.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "typescript.preferences.includePackageJsonAutoImports": "auto",
+    "javascript.preferences.includePackageJsonAutoImports": "auto",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.tabCompletion": "on",
+    "editor.wordBasedSuggestions": "off",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    }
+}

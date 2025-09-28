@@ -1,0 +1,14 @@
+{
+    "cursor.ai.autoApprove": true,
+    "cursor.ai.autoApproveFileOperations": true,
+    "cursor.ai.autoApproveTerminalCommands": true,
+    "cursor.ai.autoApproveCodeChanges": true,
+    "cursor.ai.safetyMode": "balanced",
+    "cursor.ai.maxAutoOperations": 50,
+    "cursor.ai.autoBackup": true,
+    "cursor.ai.autoFormat": true,
+    "cursor.ai.autoLint": true,
+    "cursor.ai.autoApproveDelay": 5000,
+    "cursor.ai.showCountdown": true,
+    "cursor.ai.confirmationTimeout": 5000
+}

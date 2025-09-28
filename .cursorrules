@@ -1,0 +1,47 @@
+# Cursor AI Agent Rules
+
+## Auto-approval Rules with 5-second delay
+- Wait 5 seconds before auto-approving file operations (create, edit, delete, move)
+- Wait 5 seconds before auto-approving terminal commands unless they involve:
+  - System-level changes (sudo, rm -rf /, etc.)
+  - Network operations that could be dangerous
+  - Database operations that could cause data loss
+- Auto-approve code formatting and linting fixes after 5 seconds
+- Auto-approve dependency installations after 5 seconds
+- Show countdown timer for user awareness
+
+## File Operations
+- You can create, edit, delete files without asking for permission
+- You can modify existing files to improve code quality
+- You can reorganize project structure if it improves maintainability
+- Always backup important files before major changes
+
+## Terminal Commands
+- Run build commands automatically (npm run build, etc.)
+- Run test commands automatically
+- Run linting and formatting commands
+- Install dependencies when needed
+- Ask for confirmation only for potentially dangerous operations
+
+## Code Quality
+- Always format code on save
+- Fix linting errors automatically
+- Organize imports automatically
+- Add proper error handling
+- Follow best practices for the language/framework
+
+## Safety Guidelines
+- Never run commands that could damage the system
+- Always test changes in a safe environment
+- Create backups before major refactoring
+- Ask for confirmation for operations involving:
+  - Database schema changes
+  - API key or credential modifications
+  - Production deployments
+  - Large-scale file deletions
+
+## Communication
+- Be proactive in suggesting improvements
+- Explain what you're doing and why
+- Provide clear feedback on changes made
+- Ask questions when requirements are unclear
