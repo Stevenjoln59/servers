@@ -2,8 +2,9 @@
 
 ## Các tính năng đã được cài đặt:
 
-### 1. ✅ Tự động lưu code
-- Code sẽ tự động lưu sau 1 giây khi bạn dừng gõ
+### 1. ✅ Tự động lưu code với delay 5 giây
+- Code sẽ tự động lưu sau 5 giây khi bạn dừng gõ
+- Hiển thị countdown timer để bạn có thể hủy
 - Tự động format code khi lưu
 - Tự động sửa lỗi linting
 
@@ -12,11 +13,12 @@
 - Không hỏi xác nhận khi xóa file
 - Git tự động sync và commit
 
-### 3. ✅ Quy tắc cho AI Agent
-- Agent có thể tạo, sửa, xóa file tự do
-- Tự động chạy build, test, lint commands
-- Tự động cài đặt dependencies
-- Chỉ hỏi xác nhận cho các thao tác nguy hiểm
+### 3. ✅ Quy tắc cho AI Agent với delay 5 giây
+- Agent chờ 5 giây trước khi tạo, sửa, xóa file
+- Hiển thị countdown timer cho mỗi thao tác
+- Tự động chạy build, test, lint commands sau 5 giây
+- Tự động cài đặt dependencies sau 5 giây
+- Có thể hủy bằng Ctrl+C hoặc gõ "cancel"
 
 ### 4. ✅ Cài đặt bổ sung
 - Auto-import packages
@@ -26,9 +28,10 @@
 
 ## Cách sử dụng:
 
-1. **Khởi động workspace**: Chạy `./scripts/auto-setup.sh`
-2. **Làm việc bình thường**: Agent sẽ tự động xử lý các thao tác
-3. **Kiểm tra logs**: Xem terminal để theo dõi các thao tác tự động
+1. **Khởi động workspace**: Chạy `./scripts/delayed-auto-setup.sh` (có delay 5s)
+2. **Làm việc bình thường**: Agent sẽ chờ 5 giây trước khi thực hiện thao tác
+3. **Hủy thao tác**: Nhấn Ctrl+C hoặc gõ "cancel" trong 5 giây
+4. **Kiểm tra logs**: Xem terminal để theo dõi countdown timer
 
 ## Lưu ý an toàn:
 

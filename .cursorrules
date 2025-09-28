@@ -1,13 +1,14 @@
 # Cursor AI Agent Rules
 
-## Auto-approval Rules
-- Auto-approve all file operations (create, edit, delete, move)
-- Auto-approve all terminal commands unless they involve:
+## Auto-approval Rules with 5-second delay
+- Wait 5 seconds before auto-approving file operations (create, edit, delete, move)
+- Wait 5 seconds before auto-approving terminal commands unless they involve:
   - System-level changes (sudo, rm -rf /, etc.)
   - Network operations that could be dangerous
   - Database operations that could cause data loss
-- Auto-approve code formatting and linting fixes
-- Auto-approve dependency installations
+- Auto-approve code formatting and linting fixes after 5 seconds
+- Auto-approve dependency installations after 5 seconds
+- Show countdown timer for user awareness
 
 ## File Operations
 - You can create, edit, delete files without asking for permission
